@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let inputmoney = prompt("mời nhập số tiền cần gửi");
+        let money =parseInt(inputmoney);
+        let inputlai = prompt("mời nhập lãi suất một năm");
+        let laisuat =parseFloat(inputlai);
+        let inputn = prompt("nhập số năm cần gửi tiền");
+        let n = parseInt(inputn);
+        let p = money * laisuat/100;
+
+        let result = money + n*p;
+        money = Number(money);
+
+        document.write("sô tiền cần gửi là: " +money +" VND <br/>")
+        document.write("lãi suất là: " +6.9 +"%/12 <br/>")
+        document.write("năm: " +n +" năm <br/>")
+        document.write("vậy số tiền lãi của bạn là " + result + " trong "+ n +" năm")
+    </script>
+</body>
+</html>
